@@ -6,6 +6,14 @@ import PIL.Image
 from PIL import ImageTk
 from tkinter import messagebox
 
+def center_window(width, height):
+    global app
+    screen_width = app.winfo_screenwidth()
+    screen_height = app.winfo_screenheight()
+    x = (screen_width/2) - (width/2)
+    y = (screen_height/2) - (height/2)
+    app.geometry('%dx%d+%d+%d' % (width, height, x, y))
+
 def finish():
     global finish_game
     global var1
@@ -257,7 +265,7 @@ def menu():
     global cpu_choose
     global choose_game
     app = tk.Tk()
-    app.geometry('340x400')
+    center_window(340,400)
     app.title('Menu')
     app.resizable(0, 0)
     s = ttk.Style()
