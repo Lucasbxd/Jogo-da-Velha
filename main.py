@@ -106,8 +106,8 @@ def play():
     player2_score = 0
     finish_state = False
     app.title('Jogar')
-    img1 = PhotoImage(file='player1.png')
-    img2 = PhotoImage(file='player2.png')
+    img1 = PhotoImage(file='./img/player1.png')
+    img2 = PhotoImage(file='./img/player2.png')
 
     def change_player():
         global cpu_choose
@@ -215,11 +215,11 @@ def play():
     def action_Play9():
         action(9, 230, 290, d_w, d_h)
 
-    red_img1 = ImageTk.PhotoImage(PIL.Image.open('player1.png').resize((33, 36)))
-    red_img2 = ImageTk.PhotoImage(PIL.Image.open('player2.png').resize((33, 32)))
-    red_img3 = ImageTk.PhotoImage(PIL.Image.open('replay.png').resize((20, 20)))
-    red_img4 = ImageTk.PhotoImage(PIL.Image.open('win_off.png').resize((30, 30)))
-    red_img5 = ImageTk.PhotoImage(PIL.Image.open('win_on.png').resize((30, 30)))
+    red_img1 = ImageTk.PhotoImage(PIL.Image.open('./img/player1.png').resize((33, 36)))
+    red_img2 = ImageTk.PhotoImage(PIL.Image.open('./img/player2.png').resize((33, 32)))
+    red_img3 = ImageTk.PhotoImage(PIL.Image.open('./img/replay.png').resize((20, 20)))
+    red_img4 = ImageTk.PhotoImage(PIL.Image.open('./img/win_off.png').resize((30, 30)))
+    red_img5 = ImageTk.PhotoImage(PIL.Image.open('./img/win_on.png').resize((30, 30)))
 
     var1 = IntVar()
     var1.set(player1_score)
@@ -272,9 +272,9 @@ def menu():
     s.configure('rd1.TRadiobutton', background='#2e3031', foreground='white')
     fr0_0 = Frame(app, bg='#252627').place(x=0, y=0, width=341, height=400)
     fr0_1 = Frame(app, bg='#2e3031').place(x=10, y=70, width=320, height=320)
-    red_img1_1 = ImageTk.PhotoImage(PIL.Image.open('list.png').resize((20, 20)))
-    red_img1_2 = ImageTk.PhotoImage(PIL.Image.open('team.png').resize((20, 20)))
-    red_img1_3 = ImageTk.PhotoImage(PIL.Image.open('play.png').resize((20, 20)))
+    red_img1_1 = ImageTk.PhotoImage(PIL.Image.open('./img/list.png').resize((20, 20)))
+    red_img1_2 = ImageTk.PhotoImage(PIL.Image.open('./img/team.png').resize((20, 20)))
+    red_img1_3 = ImageTk.PhotoImage(PIL.Image.open('./img/play.png').resize((20, 20)))
     lb0_0 = Label(app, bg='#2e3031', text='Escolha o modo de jogo:',fg='white', font="Calibri 12 bold").place(x=40, y=75)
     lb0_1 = Label(app, bg='#2e3031', image=red_img1_1).place(x=15, y=75)
     choose_game = IntVar()
