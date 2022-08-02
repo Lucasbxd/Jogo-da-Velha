@@ -3,6 +3,7 @@
 <p align="center" dir="auto">
   <img src="https://img.shields.io/badge/status-concluído-sucess">
   <img src="https://img.shields.io/github/repo-size/Lucasbxd/Jogo-da-Velha">
+  <img alt="Github License" src="https://img.shields.io/github/license/lucasbxd/jogo-da-velha" />
 </p>
 
 <p align="center" dir="auto">Jogo da velha criado em python com o foco em recriar a lógica por trás do jogo.</p>
