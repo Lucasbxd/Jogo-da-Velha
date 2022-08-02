@@ -1,26 +1,69 @@
-## Screenshots
+<h1 align="center" dir="auto">Jogo da Velha</h1>
 
-<img src="https://user-images.githubusercontent.com/108020286/176003590-9ef20217-59bd-42b7-858c-b874070642bc.png" width="200" height="249"><img src="https://user-images.githubusercontent.com/108020286/176003593-fc6eded6-3975-4693-bb51-5073af3b6507.png" width="200" height="249">
-<img src="https://user-images.githubusercontent.com/108020286/176003595-1736ed32-e94e-40f0-96d6-a8dc5297473e.png" width="200" height="249">
-<img src="https://user-images.githubusercontent.com/108020286/176003597-0930202c-a6e1-4a94-a157-2abee91bd2d4.png" width="200" height="249"><img src="https://user-images.githubusercontent.com/108020286/176003598-85ddf3ae-62e5-4fd6-8768-cdf889072bcb.png" width="200" height="249">
+<p align="center" dir="auto">
+  <img src="https://img.shields.io/badge/status-concluído-sucess">
+  <img src="https://img.shields.io/github/repo-size/Lucasbxd/Jogo-da-Velha">
+</p>
 
+<p align="center" dir="auto">Jogo da velha criado em python com o foco em recriar a lógica por trás do jogo.</p>
 
-## Introdução
+<p align="center">
+  <a href="#sobre">Sobre</a> -
+  <a href="#funcoes">Funções</a> -
+  <a href="#tecnologias">Tecnologias</a> -
+  <a href="#pre-requisitos">Pré-requisitos</a> -
+  <a href="#autor">Autor</a>
+</p>
 
-  Projeto com o intuito de programar o jogo da velha em python.
-  
-## Bibliotecas
-* Tkinter
-* Random
-* PIL
- 
- ## Funções
- * Jogar Player contra Player
- * Jogar Player contra CPU
- * Jogar um número determinado de partidas(1,3,5,7,9)
+<p  align="center" dir="auto"><img src="./github/asd.gif"></p>
 
-## Créditos
+<h2 id="sobre">📍 Sobre</h2>
+<p>O objetivo do presente projeto é praticar a utilização do python em uma software, utilizando funções, classes e arrays para criar um jogo da velha simples.</p>
 
-Os ícones utilizados neste projeto foram obtidos através de sites de terceiros como Flaticon e etc, abaixo o nome dos criadores e os links de seus trabalhos.
-* <a href="https://www.flaticon.com/authors/freepik" title="Input icons created by Freepik - Flaticon">Freepik</a> (win_off.png, win_on.png, replay.png, play.png, team.png)
-* Criadores não encontrados (list.png, play,png, player1, player2)
+<h2 id="funcoes">🎮 Funções</h2>
+<p>As seguintes funções foram desenvolvidas no software:</p>
+<ul>
+  <li>Jogar Player contra Player</li>
+  <li>Jogar Player contra CPU</li>
+  <li>Jogar um número determinado de partidas(1,3,5,7,9)</li>
+</ul>
+
+<h2 id="tecnologias">🛠 Tecnologias</h2>
+<p>As seguintes ferramentas foram utilizadas para a construção do projeto:</p>
+<ul>
+  <li>Python</li>
+  <li>Bibliotecas:
+  <ul>
+  <li>Tkinter</li>
+  <li>PIL</li>
+  <li>Random</li>
+  </ul>
+</ul>
+
+<h2 id="pre-requisitos">⚙️ Pré-requisitos</h2>
+<p> Antes de começar é necessário instalar as seguintes ferramentas em sua máquina: <a href="https://git-scm.com">Git</a>, <a href="https://www.python.org/">Python</a> e <a href="yarnpkg.com">Yarn</a>. Com todos os programas instalados, execute as seguintes linhas de código:
+
+<p>Instalando as bibliotecas do python:</p>
+
+```bash
+# PIL
+$ pip install Pillow
+```
+
+<p>Rodando projeto em sua máquina:<p>
+
+```bash
+# clone este repositório
+$ git clone https://github.com/Lucasbxd/Jogo-da-Velha
+
+# acesse o repositório
+$ cd Landing-page-Agenciafake
+
+# Instale as dependências
+$ yarn install
+
+# Inicie a aplicação
+$ yan start
+```
+---
+<p id="autor">Made with by Lucasbxd <a target="blank" href="https://www.linkedin.com/in/lucasbxd/">💛 See my linkedin</a> | ícones obtidos através do site <a href="https://www.flaticon.com/authors/freepik">flaticon</a>.</p>
