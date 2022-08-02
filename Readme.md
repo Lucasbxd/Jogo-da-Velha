@@ -16,7 +16,7 @@
   <a href="#autor">Autor</a>
 </p>
 
-<p  align="center" dir="auto"><img src="./github/asd.gif"></p>
+<p  align="center" dir="auto"><img src="./github/imagem.gif"></p>
 
 <h2 id="sobre">📍 Sobre</h2>
 <p>O objetivo do presente projeto é praticar a utilização do python em uma software, utilizando funções, classes e arrays para criar um jogo da velha simples.</p>
