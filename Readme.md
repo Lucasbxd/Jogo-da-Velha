@@ -58,7 +58,7 @@ $ pip install Pillow
 $ git clone https://github.com/Lucasbxd/Jogo-da-Velha
 
 # acesse o repositório
-$ cd Landing-page-Agenciafake
+$ cd Jogo-da-Velha
 
 # Instale as dependências
 $ yarn install
