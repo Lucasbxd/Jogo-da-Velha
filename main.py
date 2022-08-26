@@ -100,10 +100,12 @@ def finalizar_partida():
   if(modo_de_jogo.get() != 0):
     encerrar_jogo()
 
-def play():
+def jogar():
   global imagem_win_on
   global texto_pontuacao_o
   global texto_pontuacao_x
+
+  app.title('Jogar')
 
   imagem_jogar_player1 = PhotoImage(file='./img/player1.png')
   imagem_jogar_player2 = PhotoImage(file='./img/player2.png')
@@ -124,28 +126,28 @@ def play():
     if(quantidade_total_de_jogadas < 9 ):
       escolher_jogada = False
       while(escolher_jogada == False):
-        cpu = randint(0,8)
-        if((cpu not in jogador_O) and (cpu not in jogador_X)):
+        jogada_cpu = randint(0,8)
+        if((jogada_cpu not in jogador_O) and (jogada_cpu not in jogador_X)):
           escolher_jogada = True
           break
 
-      if cpu == 0:
+      if jogada_cpu == 0:
           Executar_jogada_player(0,10,70)
-      if cpu == 1:
+      if jogada_cpu == 1:
           Executar_jogada_player(1,120,70)
-      if cpu == 2:
+      if jogada_cpu == 2:
           Executar_jogada_player(2,230,70)
-      if cpu == 3:
+      if jogada_cpu == 3:
           Executar_jogada_player(3,10,180)
-      if cpu == 4:
+      if jogada_cpu == 4:
           Executar_jogada_player(4,120,180)
-      if cpu == 5:
+      if jogada_cpu == 5:
           Executar_jogada_player(5,230,180)
-      if cpu == 6:
+      if jogada_cpu == 6:
           Executar_jogada_player(6,10,290)
-      if cpu == 7:
+      if jogada_cpu == 7:
           Executar_jogada_player(7,120,290)
-      if cpu == 8:
+      if jogada_cpu == 8:
           Executar_jogada_player(8,230,290)
     
   def trocar_player():
@@ -431,7 +433,7 @@ def menu():
   escolher_opcao_cpu.place(x=15, y=310)
 
   imagem_play = redimensionar_imagem('./img/play.png',20,20)
-  button_jogar = Button(app, bg=cor_cinza_ton2, compound=LEFT, image=imagem_play, text=" Jogar",command=play, fg=cor_branco_ton1)
+  button_jogar = Button(app, bg=cor_cinza_ton2, compound=LEFT, image=imagem_play, text=" Jogar",command=jogar, fg=cor_branco_ton1)
   button_jogar.place(x=120, y=350, width=100, height=30)
 
   app.mainloop()
